@@ -2,7 +2,9 @@ import { useContext } from 'react'
 import './App.css';
 import Home from './Home'
 import Info from './Info'
-import { GlobalProvider, GlobalContext } from './global/GlobalContext'
+import Search from './Search'
+import { GlobalProvider, 
+  GlobalContext } from './global/GlobalContext'
 
 
 const App = () =>  {
@@ -19,6 +21,7 @@ const App = () =>  {
       <Info/>
     </div>
     <Home/>
+    <Search/>
   </GlobalProvider>
   )
 }

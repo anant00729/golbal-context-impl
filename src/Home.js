@@ -6,7 +6,7 @@ function Home() {
   const { onLoginValueChanged } = useContext(GlobalContext)
 
   const handleHomeClick = () => {
-    if(localStorage.getItem('isLoggedIn') == 'false'){
+    if(localStorage.getItem('isLoggedIn') === 'false'){
       onLoginValueChanged('true')
     }else {
       onLoginValueChanged('false')

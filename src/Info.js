@@ -5,7 +5,7 @@ export default function Info() {
   const {isLoggedIn} = useContext(GlobalContext)
   return (
     <div style={{
-      border: isLoggedIn == 'true' ?  '10px solid tomato' : '10px solid teal', 
+      border: isLoggedIn === 'true' ?  '10px solid tomato' : '10px solid teal', 
       cursor: 'pointer'
     }}
     >
